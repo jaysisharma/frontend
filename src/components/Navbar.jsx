@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center px-6 py-4 md:px-20">
         {/* Logo */}
         <Link to="/" onClick={handleLinkClick}>
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Logo" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -39,12 +39,7 @@ const Navbar = () => {
           <Link to="/about" onClick={handleLinkClick} className={`hover:text-[#FC8019] ${hoverText}`}>Who we are</Link>
           <Link to="/careers" onClick={handleLinkClick} className={`hover:text-[#FC8019] ${hoverText}`}>Careers</Link>
           <Link to="/contact" onClick={handleLinkClick} className={`hover:text-[#FC8019] ${hoverText}`}>Contact</Link>
-          <Link
-            to="/waitlist"
-            className={`ml-4 border px-4 py-2 rounded transition-all ${borderColor} ${baseTextColor} hover:bg-[#FC8019] hover:text-white`}
-          >
-            Join Waitlist
-          </Link>
+          
         </div>
 
         {/* Mobile Hamburger */}
@@ -64,13 +59,7 @@ const Navbar = () => {
           <Link to="/about" onClick={handleLinkClick} className="hover:text-[#FC8019]">Who we are</Link>
           <Link to="/careers" onClick={handleLinkClick} className="hover:text-[#FC8019]">Careers</Link>
           <Link to="/contact" onClick={handleLinkClick} className="hover:text-[#FC8019]">Contact</Link>
-          <Link
-            to="/waitlist"
-            onClick={handleLinkClick}
-            className="border border-black px-4 py-2 rounded text-center hover:bg-[#FC8019] hover:text-white"
-          >
-            Join Waitlist
-          </Link>
+          
         </div>
       </div>
     </div>
